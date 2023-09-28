@@ -9,10 +9,40 @@
 <body>
 
 <!-- Header start -->
-<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-20">
     <div class="container">
-        <div class="flex items-center">
-            
+        <div class="flex items-center justify-between relative">
+            <div class="px-4">
+                <a href="#home" class="font-bold text-lg text-primary block py-6">rakanugraha</a>
+            </div>
+            <div class="flex items-center px-4">
+                <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                    <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                </button>
+
+                <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    <ul class="block lg:flex">
+                        <li class="group">
+                            <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
+                        </li>
+                        <li class="group">
+                            <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About Me</a>
+                        </li>
+                        <li class="group">
+                            <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                        </li>
+                        <li class="group">
+                            <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                        </li>
+                        <li class="group">
+                            <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
         </div>
     </div>
 
@@ -27,8 +57,7 @@
                 <h1 class="text-base font-semibold text-primary md:text-xl lg:text-2xl">Hi👋, i'm <span class="block font-bold text-dark text-4xl mt-1">Raka Nugraha</span></h1>
                 <h2 class="font-medium text-secondary mb-5 lg:text-2xl">Fullstack Web Developer & <span class="text-dark"> IT Staff</span></h2>
                 <p class="font-medium text-secondary mb-10 leading-relaxed">I have experience for working as IT staff atleast 3 years, and now i'm student at harisenin.com for <span class="text-dark font-bold">Fullstack Web Developer.</span></p>
-
-                <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-out">Contact me</a>
+                <a href="#" text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-out">Contact me</a>
             </div>
             <div class="w-full self-end px-4 lg:w-1/2">
                 <div class="relative mt-10 lg:mt-9 lg:right-0">
@@ -54,7 +83,7 @@
                 <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">I'm Raka Nugraha student at harisenin.com</h2>
                 <p class="font-medium text-base text-secondary max-w-xl lg:text-lg"> I used to work at PT Surganya Motor Indonesia, also known as Planet Ban. There, I worked as a Store Leader for 1 year and 9 months. Later, I also worked as an IT Staff at PT American Hamburger for 3 years. However, currently, I am student at harisenin.com participating in a Bootcamp programs, to learn programming so that in the future, I can become a professional Full Stack Developer</p>
             </div>
-            <div class="w-full px-4 lg:w-1/2">
+            <div id="contact" class="w-full px-4 lg:w-1/2">
                 <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Follow me on social media</h3>
                 <p class="font-medium text-base text-secondary mb-6">Get in touch follow me on social media and lets be a friend</p>
                 <div class="flex item-center">
@@ -94,5 +123,10 @@
     </div>
 </section>
 <!-- About section end -->
+
+<script src="dist/js/script.js">
+
+</script>
+
 </body>
 </html>
